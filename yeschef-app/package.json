@@ -1,0 +1,52 @@
+{
+  "name": "tokyo-free-black-nextjs-admin-dashboard-js",
+  "version": "1.0.0",
+  "title": "Tokyo Free Black NextJS Javascript Admin Dashboard",
+  "description": "High performance React template built with lots of powerful MUI (Material-UI) components across multiple product niches for fast & perfect apps development processes",
+  "author": {
+    "name": "BloomUI.com",
+    "url": "https://bloomui.com"
+  },
+  "private": false,
+  "dependencies": {
+    "@emotion/cache": "11.10.5",
+    "@emotion/react": "11.10.5",
+    "@emotion/server": "11.10.0",
+    "@emotion/styled": "11.10.5",
+    "@mui/core": "5.0.0-alpha.54",
+    "@mui/icons-material": "5.11.0",
+    "@mui/lab": "5.0.0-alpha.114",
+    "@mui/material": "5.11.2",
+    "@mui/styles": "5.11.2",
+    "embla-carousel-react": "^7.0.5",
+    "next": "13.1.1",
+    "next-images": "1.8.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swr": "^2.0.0",
+    "tss-react": "^4.5.2",
+    "underscore": "^1.13.6"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "next lint",
+    "lint-fix": "next lint --fix",
+    "format": "prettier --write \"./**/*.{js,jsx,json}\" --config ./.prettierrc"
+  },
+  "devDependencies": {
+    "eslint": "8.30.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.2",
+    "prettier": "2.8.1",
+    "react-app-env": "^1.2.3"
+  }
+}
