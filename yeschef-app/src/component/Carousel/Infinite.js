@@ -70,13 +70,15 @@ const Carousel = ({ options }) => {
           />
         ))}
       </Box>
-      <Box sx={{my: 10}} className={classes.embla} ref={emblaRef}>
+      <Box sx={{py: 20}} className={classes.embla} >
+        <Box className={classes.embla__viewport} ref={emblaRef}>
           <Box className={classes.embla__container}>
             <SectionOne className={classes.embla__slide} />
             <SectionTwo className={classes.embla__slide} />
             <SectionThree className={classes.embla__slide} />
           </Box>
         </Box>
+      </Box>
     </Box>
   );
 };

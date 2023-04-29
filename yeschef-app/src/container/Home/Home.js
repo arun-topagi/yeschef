@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from '@mui/material';
 import HeroSection from 'src/component/Carousel/Infinite'
 
-const OPTIONS = { loop: false, axis: 'x'  };
+const OPTIONS = { loop: true, axis: 'y'  };
 
 function Home() {
   return (
