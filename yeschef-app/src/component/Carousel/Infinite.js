@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types'
 import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 // mui
 import { Box } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
@@ -11,6 +12,9 @@ import SectionOne from 'src/component/HeroSection/SectionOne';
 import SectionTwo from 'src/component/HeroSection/SectionTwo';
 import SectionThree from 'src/component/HeroSection/SectionThree';
 
+
+const autoplayOptions = { delay: 3500 };
+const autoplay = Autoplay(autoplayOptions);
 
 const useStyles = makeStyles()((theme) => ({
   embla: {
@@ -31,7 +35,7 @@ const useStyles = makeStyles()((theme) => ({
 }));
 
 const Carousel = ({ options }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, []);
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [autoplay]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
   const { classes } = useStyles();
@@ -54,7 +58,7 @@ const Carousel = ({ options }) => {
       <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} px={8}>
         <Box component={'div'} sx={{
           width: '3px',
-          height: '100px',
+          height: 100,
           borderRadius: '4px',
           backgroundColor: theme.palette.primary.main,
           my: 1,

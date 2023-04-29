@@ -18,7 +18,8 @@ const DotButton =  ({ selected }) => {
             border: `1.5px solid ${theme.palette.primary.main}`,
             my: 1,
           },
-          selected && { backgroundColor: theme.palette.primary.main, cursor: 'default' }
+          selected && { backgroundColor: theme.palette.primary.main, cursor: 'default', width: '14px',
+          height: '14px', }
         ]}
       />
     );
